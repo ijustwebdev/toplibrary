@@ -1,0 +1,99 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+h1{
+    font-size: 4vw;
+}
+button{
+    height: 6vw;
+    width: 25vw;
+    margin-top: 1vw;
+    font-size: 2vw;
+}
+html{
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(180deg, lightblue, grey);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#yoursavedbooks{
+    display: block;
+    font-size: 4vw;
+    font-weight: bold;
+    display: none;
+    margin-top: 5%;
+}
+#bookdisplay{ /* wrapper for cards */
+    display: hidden;
+    max-width: 80%;
+    max-height: 40%;
+    font-size: 2vw;
+    margin-top: 0%;
+    padding: 0%;
+    border-radius: 15px;
+    background-color: white;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    justify-content: space-evenly;
+    gap: 1%;
+    overflow: hidden;
+}
+
+.modal{
+    display: none;
+    justify-content: center;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+.modalcontent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1%;
+    margin: 2%;
+    background-color: white;
+    border: solid 2px black;
+    border-radius: 15px;
+    width: 80%;
+}
+.modalinput{
+    margin: 3%;
+    font-size: 3vw;
+    justify-self: flex-start;
+}
+#addbtn{
+    margin-top: 5%;
+}
+.inpt{
+    font-size: 2vw;
+    width: 60%;
+}
+#close{
+    align-self: flex-end;
+    margin-right: 3%;
+    font-size: 5vw;
+    font-weight: bold;
+}
+#close:hover,
+#close:focus {
+  color: red;
+  text-decoration: none;
+  cursor: pointer;
+}
+.card{
+    background-color: white;
+    border-radius: 10px;
+
+}
